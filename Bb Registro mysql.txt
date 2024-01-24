@@ -1,0 +1,26 @@
+
+
+CREATE DATABASE BdRegsitro
+
+CREATE TABLE usuario
+(
+id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+usuario  VARCHAR(50),
+contraseña VARCHAR(50),
+cargo  VARCHAR(50)
+)
+
+CREATE TABLE personal
+(
+    id_personal INT PRIMARY KEY AUTO_INCREMENT,
+    codigo VARCHAR(50),
+    nombres VARCHAR(50),
+    mes VARCHAR(50),
+    estado BOOLEAN, 
+    año VARCHAR(50),
+    observacion VARCHAR(50)
+);
+
+
+
+INSERT INTO usuario VALUES('','admin','123','Administrador')
